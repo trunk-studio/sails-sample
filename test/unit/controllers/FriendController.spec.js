@@ -1,4 +1,4 @@
-describe.only('test Friend CRUD', () => {
+describe('test Friend CRUD', () => {
   let friendId = null;
   before(async (done) => {
     done();
@@ -44,9 +44,8 @@ describe.only('test Friend CRUD', () => {
 
   it('delete a friend', async (done) => {
     let res = await request(sails.hooks.http.app)
-      .delete(`/friend/delete/${friendId}`)
+      .delete(`/friend/destroy/${friendId}`)
       .expect(200);
-      console.log(res.body);
 
     let friend = await Friend.findById(friendId);
     (friend === null).should.be.true;

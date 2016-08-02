@@ -28,9 +28,9 @@ module.exports.policies = {
   },
   'FriendController': {
     'create': [],
-    'find': [],
+    'findAll': [],
     'update': [],
-    'delete': []
+    'destroy': []
   },
   'DashboardController': {
     '*': []

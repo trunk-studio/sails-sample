@@ -8,7 +8,7 @@ module.exports = {
     }
   },
 
-  find: async (req, res) => {
+  findAll: async (req, res) => {
     try {
       let friends = await Friend.findAll();
       res.ok({friends});
@@ -30,7 +30,7 @@ module.exports = {
     }
   },
 
-  delete: async (req, res) => {
+  destroy: async (req, res) => {
     try {
       let result = await Friend.destroy({
         where: {
