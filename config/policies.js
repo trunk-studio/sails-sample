@@ -28,6 +28,12 @@ module.exports.policies = {
   },
   'DashboardController': {
     '*': []
+  },
+  'friendcontroller': {
+    'index': [],
+    'create': [],
+    'update': [],
+    'delete': []
   }
   /***************************************************************************
   *                                                                          *
