@@ -57,6 +57,12 @@ module.exports.routes = {
   'get /api/arrow/authOfFirstPost': 'DashboardController.get_arrow',
   'get /api/async/authOfFirstPost': 'DashboardController.get_async',
 
+  'post /friend/create': 'FriendController.create',
+  'get /friend/find': 'FriendController.findAll',
+  'put /friend/update/:id': 'FriendController.update',
+  'delete /friend/destroy/:id': 'FriendController.destroy',
+
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

@@ -26,6 +26,12 @@ module.exports.policies = {
     'index': [],
     'find': []
   },
+  'FriendController': {
+    'create': [],
+    'findAll': [],
+    'update': [],
+    'destroy': []
+  },
   'DashboardController': {
     '*': []
   }
